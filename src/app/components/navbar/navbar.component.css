@@ -1,12 +1,8 @@
-.navbar {
-  background-color: #008dc9;
-}
-
 #navbar-icon {
   width: 30px;
   height: 30px;
 }
 
 .nav-link {
-  color: #ffffff;
+  font-size: large;
 }
