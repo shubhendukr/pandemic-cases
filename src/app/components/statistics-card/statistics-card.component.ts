@@ -7,10 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class StatisticsCardComponent implements OnInit {
 
-  @Input() totalConfirmedCases: number;
-  @Input() totalDeathCases: number;
-  @Input() totalRecoveredCases: number;
-  @Input() totalActiveCases: number;
+  @Input() totalConfirmedCases: string;
+  @Input() totalDeathCases: string;
+  @Input() totalRecoveredCases: string;
+  @Input() totalActiveCases: string;
   constructor() { }
 
   ngOnInit(): void {

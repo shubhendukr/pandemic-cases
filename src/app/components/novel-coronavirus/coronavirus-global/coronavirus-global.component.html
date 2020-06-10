@@ -1,3 +1,8 @@
 <app-navbar></app-navbar>
-<app-statistics-card></app-statistics-card>
+<app-statistics-card
+  [totalConfirmedCases]='globalConfirmedCasesCSV'
+  [totalDeathCases]='globalDeathCasesCSV'
+  [totalRecoveredCases]='globalRecoveredCasesCSV'
+  [totalActiveCases]='globalActiveCasesCSV'>
+</app-statistics-card>
 

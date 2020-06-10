@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoronavirusGlobalComponent } from './components/novel-coronavirus/coronavirus-global/coronavirus-global.component';
 import { CoronavirusCountryComponent } from './components/novel-coronavirus/coronavirus-country/coronavirus-country.component';
 import { StatisticsCardComponent } from './components/statistics-card/statistics-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { StatisticsCardComponent } from './components/statistics-card/statistics
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
