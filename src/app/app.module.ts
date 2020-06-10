@@ -9,6 +9,7 @@ import { PandemicHomeComponent } from './components/pandemic-home/pandemic-home.
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoronavirusGlobalComponent } from './components/novel-coronavirus/coronavirus-global/coronavirus-global.component';
 import { CoronavirusCountryComponent } from './components/novel-coronavirus/coronavirus-country/coronavirus-country.component';
+import { StatisticsCardComponent } from './components/statistics-card/statistics-card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CoronavirusCountryComponent } from './components/novel-coronavirus/coro
     PandemicHomeComponent,
     NavbarComponent,
     CoronavirusGlobalComponent,
-    CoronavirusCountryComponent
+    CoronavirusCountryComponent,
+    StatisticsCardComponent
   ],
   imports: [
     BrowserModule,
