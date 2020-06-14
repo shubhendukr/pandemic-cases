@@ -6,3 +6,18 @@
   [totalActiveCases]='globalActiveCasesCSV'>
 </app-statistics-card>
 
+<div class="coronavirus-world-map">
+  <google-chart [data]='geoChartData'></google-chart>
+</div>
+
+<div class="world-news-cards">
+  <div class="card mb-3">
+    <img class="card-img-top" id="news-image" src="{{ newsImageURL }}"/>
+    <div class="card-body">
+      <h5 class="card-title">{{ newsTitle }}</h5>
+      <p class="card-text">{{ newsDescription }}</p>
+      <p class="card-text"><small class="text-muted">Published at: <span>{{ newsPublishedAt }}</span></small></p>
+    </div>
+  </div>
+</div>
+

@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
 import { PandemicHomeComponent } from './components/pandemic-home/pandemic-home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CoronavirusGlobalComponent } from './components/novel-coronavirus/coronavirus-global/coronavirus-global.component';
 import { CoronavirusCountryComponent } from './components/novel-coronavirus/coronavirus-country/coronavirus-country.component';
 import { StatisticsCardComponent } from './components/statistics-card/statistics-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { StatisticsTableComponent } from './components/statistics-table/statistics-table.component';
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,16 +21,19 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     CoronavirusGlobalComponent,
     CoronavirusCountryComponent,
-    StatisticsCardComponent
+    StatisticsCardComponent,
+    StatisticsTableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
     HttpClientModule,
+    Ng2GoogleChartsModule,
   ],
-  providers: [],
+  providers: [
+    DatePipe,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

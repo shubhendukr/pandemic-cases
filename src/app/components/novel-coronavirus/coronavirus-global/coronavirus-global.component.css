@@ -1,0 +1,29 @@
+.coronavirus-world-map {
+  width: 60%;
+  margin-left: 90px;
+  margin-top: 20px;
+  justify-content: center;
+  border: 1px solid #BFBFBF;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  /* border-style: solid;
+  border-radius: 5px; */
+}
+
+.world-news-cards {
+  width: 60%;
+  margin-left: 90px;
+  margin-top: 20px;
+  justify-content: center;
+  /* border: 1px solid #BFBFBF; */
+  box-shadow: 5px 5px 5px #aaaaaa
+}
+
+#news-image {
+  height: 50%;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
